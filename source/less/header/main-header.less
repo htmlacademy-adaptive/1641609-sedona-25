@@ -1,11 +1,13 @@
 .main-header {
   min-height: 56px;
+  margin: 0 auto;
 }
 
 @media (min-width: @tablet-width) {
 
   .main-header {
     display: flex;
+    width: 768px;
   }
 }
 
@@ -13,6 +15,7 @@
 
   .main-header {
     display: flex;
+    width: 1200px;
   }
 }
 
@@ -28,6 +31,7 @@
 
 .main-nav {
   background-color: #81B3D2;
+  width: 320px;
 
   @media(min-width: @tablet-width) {
     background-color: #FFFFFF;
@@ -67,8 +71,6 @@
 
   .main-nav__wrapper {
     display: flex;
-    width: 660px;
-    margin: 0 auto;
   }
 
   .main-nav__toggle {
@@ -80,13 +82,9 @@
 
   .main-nav__wrapper {
     display: flex;
-    width: 1000px;
-    margin: 0 auto;
   }
 
   .main-nav__toggle {
     display: none;
   }
 }
-
-

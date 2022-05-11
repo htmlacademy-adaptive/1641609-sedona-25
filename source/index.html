@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -44,9 +45,7 @@
     </header>
     <main class="main-container">
       <figure class="main-slogan">
-        <div class="main-slogan__wrapper">
-          <img class="main-slogan__svg" src="img/svg/text-index.svg" width="282" height="214" alt="Welcome to the georgeous Sedona because the grand Canyon sucks!">
-        </div>
+          <img class="main-slogan__svg" src="img/svg/text-index.svg" width="320" height="214" alt="Welcome to the georgeous Sedona because the grand Canyon sucks!">
       </figure>
       <h1 class="visually-hidden">
         Городок Седона лучше, чем Гранд-Каньон!
@@ -67,24 +66,26 @@
         </div>
         <ol class="advantages__list">
           <li class="advantages__item">
-            <div class="advantages__text">
-              <h3 class="advantages__title">
-                Настоящий городок
-              </h3>
-              <p class="advantages__number">
-                — №1 —
-              </p>
-              <p class="advantages__description">
-                Седона — не аттракцион для туристов, там течёт своя жизнь
-              </p>
+            <div class="advantages__block">
+              <div class="advantages__text">
+                <h3 class="advantages__title">
+                  Настоящий городок
+                </h3>
+                <p class="advantages__number">
+                  — №1 —
+                </p>
+                <p class="advantages__description">
+                  Седона — не аттракцион для туристов, там течёт своя жизнь
+                </p>
+              </div>
+              <div class="advantages__pic">
+                <img class="advantages__pic pic-city" src="img/jpg/photo-city.jpg" alt="Жизнь в Седоне.">
+              </div>
             </div>
-            <div class="advantages__pic">
-              <img class="advantages__pic pic-city" src="img/jpg/photo-city.jpg" width="520" height="260" alt="Жизнь в Седоне.">
-            </div>
-            <ul class="advantages__meta">
+            <ul class="advantages__meta advantages-container">
               <li class="advantages__meta advantages__meta--item">
                 <img class="advantages__meta advantages__meta--icon" src="img/svg/icon-house.svg" width="39" height="37" alt="Иконка.">
-                <h4 class="advantages__meta advantages__meta--tittle">
+                <h4 class="advantages__meta advantages__meta--title">
                   Жильё
                 </h4>
                 <p class="advantages__meta advantages__meta--description">
@@ -92,7 +93,7 @@
                 </p>
               </li>
               <li class="advantages__meta advantages__meta--item">
-                <img class="advantages__meta advantages__meta--icon" src="img/svg/icon-food.svg" width="40" height="35" alt="Иконка.">
+                <img class="advantages__meta advantages__meta--icon" src="img/svg/icon-food.svg" width="40" height="37" alt="Иконка.">
                 <h4 class="advantages__meta advantages__meta--title">
                   Еда
                 </h4>
@@ -101,7 +102,7 @@
                 </p>
               </li>
               <li class="advantages__meta advantages__meta--item">
-                <img class="advantages__meta advantages__meta--icon" src="img/svg/icon-souvenirs.svg" width="32" height="38" alt="Иконка.">
+                <img class="advantages__meta advantages__meta--icon" src="img/svg/icon-souvenirs.svg" width="32" height="37" alt="Иконка.">
                 <h4 class="advantages__meta advantages__meta--title">
                   Сувениры
                 </h4>
@@ -112,19 +113,21 @@
             </ul>
           </li>
           <li class="advantages__item">
-            <div class="advantages__pic">
-              <img class="advantages__pic pic-bridge" src="img/jpg/photo-bridge.jpg" width="520" height="260" alt="Знаменитый каньон Седоны.">
-            </div>
-            <div class="advantages__text">
-              <h3 class="advantages__title">
-                Там есть мост Дьявола
-              </h3>
-              <p class="advantages__number">
+            <div class="advantages__block">
+              <div class="advantages__pic">
+                <img class="advantages__pic pic-bridge" src="img/jpg/photo-bridge.jpg"  alt="Знаменитый каньон Седоны.">
+              </div>
+              <div class="advantages__text">
+                <h3 class="advantages__title">
+                  Там есть мост Дьявола
+                </h3>
+                <p class="advantages__number">
                 — №2 —
-              </p>
-              <p class="advantages__description">
-                Да, по нему можно пройти! Если вы осмелитесь,конечно
-              </p>
+                </p>
+                <p class="advantages__description">
+                  Да, по нему можно пройти! Если вы осмелитесь,конечно
+                </p>
+              </div>
             </div>
           </li>
           <li class="advantages__item">
@@ -185,7 +188,7 @@
           </a>
         </div>
         <figure class="booking__map">
-          <img class="booking__map-img" src="img/jpg/map-mobile.jpg" height="320" width="350" alt="Расположение Седоны на карте">
+          <img class="booking__map-img" src="img/jpg/map-mobile.jpg" height="320" width="320" alt="Расположение Седоны на карте">
         </figure>
       </section>
       <footer class="main-footer">
@@ -201,7 +204,7 @@
               <li class="social__item">
                 <a class="social__link social__link--vkontacte" href="https://vk.com/htmlacademy">
                   Мы в Вконтакте
-                </a>
+                <a>
               </li>
               <li class="social__item">
                 <a class="social__link social__link--youtube" href="https://vk.com/htmlacademy">
@@ -215,13 +218,14 @@
               </li>
             </ul>
           </div>
-          <div class="main-footer__copyright copyright">
-            <b class="copyright__text">
-              Разработано
-            </b>
+            <div class="main-footer__copyright copyright">
+              <b class="copyright__text">
+                Разработано
+              </b>
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
               HTML Academy
             </a>
+            </div>
           </div>
         </div>
       </footer>
